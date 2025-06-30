@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Links a Estilos CSS e iconos-->
+    <link rel="stylesheet" href="./styles/songs-styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/3c506e0821.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="index.html"
+          ><div class="logo-container">
+            <div class="logo">
+              <h1 style="font-weight: normal">AURORA</h1>
+            </div>
+          </div>
+        </a>
+
+        <label class="labe_hamburguesa" for="menu_hamburguesa">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <input
+          class="menu_hamburguesa"
+          type="checkbox"
+          name=""
+          id="menu_hamburguesa"
+        />
+
+        <ul class="ul_links">
+          <li class="li_links">
+            <a href="index.html" class="link">Inicio</a>
+          </li>
+          <li class="li_links">
+            <a href="multimedia.html" class="link">Galeria</a>
+          </li>
+          <li class="li_links">
+            <a href="discography.html" class="link">Discografia</a>
+          </li>
+          <li class="li_links">
+            <a href="songs.html" class="link">Canciones</a>
+          </li>
+          <li class="li_links">
+            <a href="login.html" class="link">Cerrar Sesión</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!--Contenedor Artista-->
+      <div class="container-artist">
+        <!--Caja de artista-->
+        <div class="box-artist">
+          <img class="aurora" src="media/img/Aurora Banner3.png" />
+        </div>
+      </div>
+      <!-- CONTENEDOR DE CANCIONES UNRELEASED -->
+      <section class="unreleased-section">
+        <h2>Canciones que aun no tienen hogar</h2>
+        <p>
+          Esta sección es un refugio para esos temas que no están en su
+          discografía oficial, pero que viven en la memoria de quienes la
+          escuchan con el corazón abierto. <br />
+          <quote
+            ><em
+              >"Not all music is meant to be released. Some songs are like wild
+              animals — they just want to be free"</em
+            >
+            <br /><strong>-Aurora.</strong></quote
+          >
+        </p>
+
+        <div class="audio-grid">
+          <div class="audio-card">
+            <h3>All My Demons</h3>
+            <audio controls>
+              <source src="audios/All My Demons.mp3" type="audio/mpeg" />
+              Tu navegador no soporta el audio.
+            </audio>
+          </div>
+
+          <div class="audio-card">
+            <h3>Silouhettes</h3>
+            <audio controls>
+              <source src="audios/Silouhettes.mp3" type="audio/mpeg" />
+              Tu navegador no soporta el audio.
+            </audio>
+          </div>
+
+          <div class="audio-card">
+            <h3>Wake Up</h3>
+            <audio controls>
+              <source src="audios/Wake Up.mp3" type="audio/mpeg" />
+              Tu navegador no soporta el audio.
+            </audio>
+          </div>
+
+          <div class="audio-card">
+            <h3>Wavelength</h3>
+            <audio controls>
+              <source src="audios/Wavelength.mp3" type="audio/mpeg" />
+              Tu navegador no soporta el audio.
+            </audio>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <!--iconos de redes sociales-->
+      <div class="social-media">
+        <a href="https://x.com/AURORAmusic" target="blank"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.facebook.com/iamAURORA/?locale=es_LA" target="blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/auroramusic?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCNjHgaLpdy1IMNK57pYiKiQ" target="blank"><i class="bi bi-youtube"></i></a>
+        <a href="https://open.spotify.com/intl-es/artist/1WgXqy2Dd70QQOU7Ay074N?si=GMJOxrFNTLGaHnLNtoZhPg" target="blank"><i class="bi bi-spotify"></i></a>
+      </div>
+
+      <p class="copyright">©Aurora 2025. Todos los Derechos Reservados.</p>
+
+    </footer>
+  </body>
+  <!--Pie de Página (Footer)-->
+</html>

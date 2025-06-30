@@ -1,0 +1,284 @@
+:root {
+    --color_primario: #010058;
+    --color_primario_suave: rgb(0, 89, 255);
+    --azul-oscuro: #010058;
+    --color_blanco: #fff;
+    --altura_header: 80px;
+    --padding_left_right: 2rem;
+    --ancho_maximo: 1200px;
+  }
+  
+  /*Fuente de Aurora*/
+  @font-face {
+    font-family: "EddaCaps";
+    src: url("../fonts/EddaCaps.woff2") format("woff2"),
+      url("../fonts/EddaCaps.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: var(--azul-oscuro);
+  }
+  a {
+    text-decoration: none;
+  }
+  ol,
+  ul {
+    list-style: none;
+  }
+  .header {
+    height: var(--altura_header);
+    background-color: var(--color_primario);
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .navbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 var(--padding_left_right);
+  }
+  .menu_hamburguesa {
+    display: none;
+  }
+  .menu_hamburguesa:checked + .ul_links {
+    height: calc(100vh - var(--altura_header));
+  }
+  .logo {
+    font-family: "EddaCaps";
+    font-size: 35px;
+    color: var(--color_blanco);
+  }
+  .labe_hamburguesa,
+  i {
+    color: var(--color_blanco);
+    cursor: pointer;
+    font-size: 35px;
+  }
+  .ul_links {
+    width: 100%;
+    background-color: var(--azul-oscuro);
+    position: absolute;
+    top: var(--altura_header);
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    /* height: calc(100vh - var(--altura_header)); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Josefin Sans", "Segoe UI";
+    gap: 3rem;
+    z-index: 1;
+    transition: all 0.3s;
+  }
+
+  .link {
+    font-size: 30px;
+    color: var(--color_blanco);
+    font-weight: bold;
+  }
+  
+  @media (min-width: 768px) {
+    .labe_hamburguesa {
+      display: none;
+    }
+    .ul_links {
+      position: static;
+      width: auto;
+      height: auto;
+      flex-direction: row;
+      gap: 2rem;
+    }
+    .link {
+      font-size: 1.2rem;
+      transition: all 0.3s;
+      padding: 0.2rem 0.7rem;
+    }
+    .link:hover {
+      font-size: 1.4rem;
+    }
+  }
+  
+  body {
+    margin: 0;
+  }
+  /*Estilos para el Footer, borde superior gris para diferenciarlo del body, es un contenedor flex que separa su contenido con espacios entre ellos dejando el primero y ultimo cerca del borde, padding ajustable para una mejor apreciación, el color del texto es gris y está centrado.*/
+  main {
+    background-color: rgb(0, 89, 255);
+  }
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    background-color: lightskyblue;
+  }
+  
+  .container-artist {
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+    height: auto;
+    width: 100%;
+  }
+  
+  @media (max-width: 800px) {
+    .container-artist {
+      flex-direction: column;
+    }
+  }
+  
+  .box-artist {
+    width: 100%;
+    z-index: 0;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    background-size: cover;
+    background-position-x: center;
+  }
+  
+  .aurora {
+    max-width: 100%;
+    mask-image: linear-gradient(black 80%, transparent);
+    animation: fadeIn 1s ease-in;
+  }
+  
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /*ESTILOS PARA EL FOOTER*/
+  footer {
+    background-color: var(--azul-oscuro);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+    font-family: "Segoe UI";
+    margin: 10px;
+  }
+  
+  /*Estilos para los iconos de las redes sociales*/
+  .social-media {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+  }
+  
+  footer i {
+    font-size: 25px;
+    transition-duration: 1s;
+  }
+  footer a{
+  transition-timing-function: ease-in-out;
+}
+
+footer a:hover {
+  scale: 1.5;
+}
+  @media (max-width: 800px) {
+    .footer {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+  
+  /*ESTILOS PARA TODO EL MAIN*/
+  body {
+    margin: 0;
+  }
+  main {
+    background-color: rgb(0, 89, 255);
+  }
+
+  /*Estilos para el cuerpo de la página, no tiene margenes, toda fuente usa Segoe UI*/
+  main {
+    font-family: "Segoe UI";
+    color: white;
+  }
+
+  
+/*ESTILOS PARA LA SECCION DE CANCIONES*/
+.unreleased-section {
+  max-width: 90%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.unreleased-section h2 {
+  font-size: 35px;
+  font-family: "EddaCaps";
+  color: white;
+  margin-bottom: 10px;
+}
+
+.unreleased-section p {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.audio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+.audio-card {
+  background: var(--azul-oscuro);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+  filter: drop-shadow(3px 3px 12px white);
+}
+
+.audio-card:hover {
+  transform: scale(1.02);
+}
+
+.audio-card h3 {
+  font-family: "Josefin Sans", "Segoe UI";
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: white;
+  
+}
+
+audio {
+  width: 100%;
+  border-radius: 10px;
+  accent-color: green; /* Cambiá este color si querés otra estética */
+}
+
+@media (max-width: 600px) {
+  .unreleased-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .unreleased-section p {
+    font-size: 0.95rem;
+  }

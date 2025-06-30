@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/index-styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/3c506e0821.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Home</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="index.html"
+          ><div class="logo-container">
+            <div class="logo">
+              <h1 style="font-weight: normal">AURORA</h1>
+            </div>
+          </div>
+        </a>
+
+        <label class="labe_hamburguesa" for="menu_hamburguesa">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <input
+          class="menu_hamburguesa"
+          type="checkbox"
+          name=""
+          id="menu_hamburguesa"
+        />
+
+        <ul class="ul_links">
+          <li class="li_links">
+            <a href="#" class="link">Inicio</a>
+          </li>
+          <li class="li_links">
+            <a href="multimedia.html" class="link">Galeria</a>
+          </li>
+          <li class="li_links">
+            <a href="discography.html" class="link">Discografia</a>
+          </li>
+          <li class="li_links">
+            <a href="songs.html" class="link">Canciones</a>
+          </li>
+          <li class="li_links">
+            <a href="login.html" class="link">Cerrar Sesión</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!--Contenedor Artista-->
+      <div class="container-artist">
+        <!--Caja de artista-->
+        <div class="box-artist">
+          <img class="aurora" src="media/img/Aurora Banner.png" />
+        </div>
+      </div>
+      <h2 class="welcome">
+        Bienvenido al Website de
+        <span style="font-family: EddaCaps">Aurora Aksnes</span>
+      </h2>
+      <div class="textos">
+        <p>
+          Nacida el 15 de junio de 1996, en Stavanger, Noruega, Aurora creció en
+          Os, un pueblo rodeado de naturaleza. Su infancia fue silenciosa,
+          mágica y sensible. Descubrió un piano viejo en el ático de su casa y a
+          los 6 años empezó a tocar sola. A los 11 escribió “Runaway”. No lo
+          hizo por fama. Lo hizo porque necesitaba sacar algo del corazón.
+          <em
+            >“I was just a tiny human with big emotions. Music made them
+            lighter.”</em
+          >
+        </p>
+        <p style="font-weight: lighter">
+          <em
+            >“Aunque su función precisa y anatomía no eran claramente
+            comprendidas, se creía que el corazón era el centro del alma. De la
+            intuición. De la emoción y la intención. Hasta que decidimos que
+            esas eran cualidades de la mente. La emoción fue superada por la
+            lógica. Y con un mundo tan corrompido por el dinero, el poder y el
+            egoísmo, no podés evitar preguntarte: ¿What Happened to the
+            heart? 🫀”</em
+          >
+        </p>
+      </div>
+
+<section class="container-form">
+  <h2>Una Carta desde el corazón 🫀</h2>
+  <p>Este espacio es para lo que no se dice en voz alta. Para lo que Aurora encendió en vos. Una emoción, un recuerdo, una frase.</p>
+
+  <form class="message-form" action="#" method="post">
+    <label for="name">Nombre o seudónimo</label>
+    <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+
+    <label for="country">País <span class="optional">(opcional)</span></label>
+    <input type="text" id="country" name="country" placeholder="Argentina">
+
+    <label for="message">Mensaje</label>
+    <textarea id="message" name="message" rows="6" placeholder="Tu música me salvó en los días más grises..." required></textarea>
+
+
+    <button type="submit">Liberar mi emoción ✨ </button>
+  </form>
+</section>
+
+
+      <div class="section1">
+        <div class="container-section">
+          <h2 class="section-title">Explora el canal de <span style="font-family: EddaCaps">AURORA</span></h2>
+          <p></p>
+          <!--Cuadricula de Youtube-->
+          <div class="grid-section">
+              <!--Tarjeta de video-->
+              <div class="card">
+                <!--Miniatura-->
+              <iframe height="100%" 
+              width="100%" src="https://www.youtube.com/embed/Ti1Iae6AcaU?list=RDTi1Iae6AcaU" title="Aurora - Full performance (Live at The Current)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            
+
+              <div class="card">
+                <iframe height="100%" 
+              width="100%" src="https://www.youtube.com/embed/P_XguuxLo10?list=RDP_XguuxLo10" title="Aurora - Full Performance (Live on KEXP)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+
+              <div class="card">
+                <iframe height="100%" 
+              width="100%" src="https://www.youtube.com/embed/26jzm94Ir6Q?list=RD26jzm94Ir6Q" title="AURORA - Starvation (Live on KEXP)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+
+              <div class="card">
+                <iframe height="100%" 
+              width="100%" src="https://www.youtube.com/embed/Md4yIaUa7uA?list=RDMd4yIaUa7uA" title="AURORA - Full Performance (Live on KEXP)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  <!--Pie de Página (Footer)-->
+    <footer>
+      <!--iconos de redes sociales-->
+      <div class="social-media">
+        <a href="https://x.com/AURORAmusic" target="blank"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.facebook.com/iamAURORA/?locale=es_LA" target="blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/auroramusic?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCNjHgaLpdy1IMNK57pYiKiQ" target="blank"><i class="bi bi-youtube"></i></a>
+        <a href="https://open.spotify.com/intl-es/artist/1WgXqy2Dd70QQOU7Ay074N?si=GMJOxrFNTLGaHnLNtoZhPg" target="blank"><i class="bi bi-spotify"></i></a>
+      </div>
+
+      <p class="copyright">©Aurora 2025. Todos los Derechos Reservados.</p>
+
+    </footer>
+  </body>
+
+</html>
